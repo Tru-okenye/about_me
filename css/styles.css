@@ -122,40 +122,17 @@
         .html{
             font-size: 50%;
         }
-   
+        .about-content{
+            width: 100%; 
+
+        }
     }
   
  
     
     /* keyframes */
-    @keyframes homeBgText {
-        0%,
-        10%,
-        100%{
-            background-position: -33rem 0;
-        }
-        65%,
-        85%{
-            background-position: 0 0;
-        }
-    }
-    @keyframes homeCursorText {
-        0%,
-        10%,
-        100%{
-            width: 0;
-        }
-        65%,
-        78%,
-        85%{
-            width: 100%;
-            opacity: 1;
-        }
-        75%,
-        81%{ 
-            opacity: 0;
-        }
-    }
+ 
+ 
     @keyframes aboutSpinner {
         100% {
             transform: translate(-50%, -50%) rotate(360deg);
@@ -221,10 +198,12 @@
     }
     .about-content{
         text-align: center;
+        width: 70%; 
+
     }
     
     .about-content p {
-        width: 60%; 
+        /* width: 70%;  */
         margin: 20px auto; 
         line-height: 1.6; 
         font-size: 1.6rem;
@@ -243,3 +222,16 @@
     }
     
    
+    @media (max-width: 900px) {
+       
+        .about-content{
+            width: 90%; 
+
+        }
+    }   @media (max-width: 700px) {
+       
+        .about-content{
+            width: 100%; 
+
+        }
+    }
